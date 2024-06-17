@@ -1,0 +1,24 @@
+.main{
+    height: 150px;
+    width: 350px;
+    margin: 20px 1em 40px 2em;
+    border: 5px dotted black;
+    padding: 1em;
+    
+}
+.line{
+    height: 100px;
+    width: 100px;
+    background-color: pink;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: inline-block;
+
+    justify-content: center;
+    align-items:center;
+}
+ul li{
+    display: inline;
+    padding: 5px;
+    text-decoration: underline;
+}
