@@ -1,4 +1,4 @@
-.main{
+/* .main{
     height: 150px;
     width: 350px;
     margin: 20px 1em 40px 2em;
@@ -13,12 +13,38 @@
     border: 2px solid black;
     border-radius: 50%;
     display: inline-block;
-
     justify-content: center;
     align-items:center;
-}
+} */
 ul li{
     display: inline;
     padding: 5px;
     text-decoration: underline;
+}
+
+.round{
+    height: 100px;
+    width: 100px;
+    border: 2px solid blue;
+    background-color: red;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 10px;
+    
+    transition: margin-top 2s ease-in 0.2s;
+    transition: 2s;
+    
+}
+.round:hover{
+    margin-top: 400px;
+    background-color: black;
+    border-radius: 0;
+}
+.ball{
+    height: 100px;
+    width: 100px;
+    border: 2px solid blue;
+    border-radius: 50%;
+    background-color: red;
+    transform: translate(100px,100px)
 }
