@@ -22,7 +22,7 @@ fetch(url)
  btn.addEventListener("click", async ()=>{
    let link = await getapi();
    let img = document.querySelector("#image")
-
+   
    img.setAttribute("src", link)
  })
 
