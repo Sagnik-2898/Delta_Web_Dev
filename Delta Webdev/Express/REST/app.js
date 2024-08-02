@@ -21,6 +21,9 @@ const { v4: uuidv4 } = require('uuid');
 app.listen(port, () => {
     console.log(`App is Listening on port ${port}`)
 })
+app.get("/",(req,res)=>{
+    res.render("Home.ejs")
+})
 
 app.get("/posts", (req, res) => {
     res.render("index.ejs", { posts });

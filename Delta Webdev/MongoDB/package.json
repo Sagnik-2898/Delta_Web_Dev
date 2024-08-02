@@ -1,19 +1,14 @@
 {
-  "name": "rest",
+  "name": "mongodb",
   "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
-  
+  "description": "Installing Mongoose and Simple Mongo Practices",
+  "main": "index.js",
   "scripts": {
-    "start":"node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
-    
   },
   "author": "Sagnik Banerjee",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.19.2",
-    "method-override": "^3.0.0",
-    "uuid": "^10.0.0"
+    "mongoose": "^8.5.0"
   }
 }
