@@ -1,12 +1,14 @@
 
 import './App.css'
+import Msgbox from './Msgbox'
 
 function App() {
-  
+
 
   return (
     <>
-      <h1>Heyy I am learning react</h1>
+      <Msgbox username="Sagnik" textcolor="black"  />
+     <h1>Welcome to Apple Store</h1>
     </>
   )
 }
