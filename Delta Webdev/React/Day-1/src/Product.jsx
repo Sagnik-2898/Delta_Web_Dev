@@ -1,21 +1,24 @@
-
-
+import Price from "./Price";
 // eslint-disable-next-line react/prop-types
-const Product = ({title,price}) => {
-  let isDiscount = price>70000
-   let styles = {backgroundColor:isDiscount ? "red":""}
-    // const list = features.map((feature)=><li>{feature}</li>)
+const Product = ({ title, idx }) => {
+  let oldPrices = ["12,999", "11,900", "1,599", "599"];
+  let newPrices = ["8,999", "9,199", "899", "278"];
+  let description = [
+    ["Super Retina XDR","M3 Pro Chip"],
+    ["Pro-Motion XDR","Dolby Vison + Atmos"],
+    ["A18 Bionic chip","120hz Smooth Display"],
+    ["The Best Earphones","60db Active Noise Cancellation"],
+  ];
   return (
     <>
-    <div className="box" style={styles}>
+      <div className="box">
         <h3>{title}</h3>
-        <h3>Price:{price}</h3>
-        <h4>{isDiscount && <p>Discount of 5%</p>}</h4>
-        {/* <p>{features.map((feature)=><li>{feature}</li>)}</p> */}
-        
-    </div>
+        <p>{description[idx][0]}</p>
+        <p>{description[idx][1]}</p>
+        <Price oldPrice={oldPrices[idx]} newPrice={newPrices[idx]} />
+      </div>
     </>
-  )
-}
+  );
+};
 
 export default Product;
