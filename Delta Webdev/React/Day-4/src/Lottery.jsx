@@ -1,11 +1,12 @@
 /* eslint-disable no-unused-vars */
 import { useState } from "react";
-import "./Lottery.css";
-import { genTicket, sum } from "./helper";
 
-const Lottery = () => {
+import { genTicket, sum } from "./helper";
+import Ticket from "./Ticket";
+
+const Lottery = ({n=3,winningSum=15}) => {
   let [ticket, setTicket] = useState(genTicket(3));
-  let isWinning = sum(ticket) === 15;
+  let isWinning = sum(ticket) === winningSum;
   let buyTicket = ()=>{
     setTicket(genTicket(3));
   }
@@ -13,12 +14,8 @@ const Lottery = () => {
   return (
     <div>
       <h1>Lottery Game</h1>
-      <div className="ticket">
-        <span>{ticket[0]}</span>
-        <span>{ticket[1]}</span>
-        <span>{ticket[2]}</span>
-      </div>
-      <br/>
+      <Ticket ticket={ticket}/>
+      
       <button onClick={buyTicket}>Buy Ticket</button>
       <h3>{isWinning && "Congratulations You Won"}</h3>
       
