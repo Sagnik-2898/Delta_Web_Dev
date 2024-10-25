@@ -1,7 +1,7 @@
 
 import './App.css'
+import Form from './Form'
 
-import ProductTab from './ProductTab.jsx'
 function App() {
 
 
@@ -9,7 +9,7 @@ function App() {
     <>
       
      <h1>Welcome to Apple Store</h1>
-     <ProductTab/>
+     <Form/>
     </>
   )
 }

@@ -1,15 +1,15 @@
 
 import './App.css'
 
-// import CommentsForm from "./commentsForm"
-import Comment from './Comment'
+
+import Joker from './Joker'
 
 function App() {
  
 
   return (
     <>
-     <Comment/>
+     <Joker/>
     </>
   )
 }
